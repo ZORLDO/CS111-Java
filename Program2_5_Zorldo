@@ -1,0 +1,36 @@
+/* File Name:          Program2_5_Zorldo
+
+   Programmer:         Zorldo
+
+   Date Last Modified: September, 2, 2016 */
+
+// Program2_5_ZORLDO.java
+// This program will calculate tips (gratuity and new total) based on
+// user input
+
+import java.util.*;
+
+public class Program2_5_Zorldo
+{
+    public static void main(String[] args)
+    {
+        System.out.println("Hello, lets calculate your gratuity");
+        System.out.println("Enter your subtotal below:");
+
+        double subtotal, rate, gratuity, total;
+
+        Scanner keyboard = new Scanner(System.in);
+        subtotal = keyboard.nextDouble( );
+        System.out.println("Enter your gratuity rate below:");
+        rate = keyboard.nextDouble();
+        
+        gratuity = (subtotal * rate);
+        total = (subtotal + gratuity);
+        
+        System.out.println();
+        System.out.println("The gratuity is $" + gratuity);
+        System.out.println("Your new total is $" + total);
+   
+        
+    }
+}
