@@ -1,0 +1,68 @@
+/* Chapter No. 2 - Exercise No. 7
+   File Name:          Program2_7_Zorldo.java
+   Programmer:         Zorldo
+   Date Last Modified: September 3, 2016
+
+   Problem Statement: Develop a calculator that separates change into quarters, dimes and nickels.
+   
+   
+   
+   Overall Plan:
+   1. define variables needed
+   2. take user submitted price and calculate change out of one dollar
+   3. divide by 25 and subtract the amount out of the "change variable"
+   4. repeat step three for dimes and nickels
+   5. output the amount of quarters, dimes, and nickels the customer received back
+   6. post a nice message to the customer
+      
+   main class - Program2_7_Zorldo
+   
+   DATA DICTIONARY
+   ---------------
+   NAME	TYPE		   VALUE RANGE	DESCRIPTION
+   =================== =========== ====================
+   price          int  0-100       The user submitted price of the item he/she is purchasing
+   change         int  0-100       The total difference of the price out of one dollar
+   quartersBack   int  0-100       The number of quarters received as change
+   dimesBack      int  0-100       The number of dimes received as change
+   nickelBack     int  0-100       The number of nickels received as change
+    
+*/
+
+import java.util.*;
+
+public class Program2_7_Zorldo
+{
+    public static void main(String[] args)
+    {
+        System.out.println("Enter price of item");
+        System.out.println("(from 25 cents to a dollar, in 5-cent increments)");
+        
+        
+        int price, change, quartersBack, dimesBack, nickelBack;
+
+        
+        Scanner keyboard               = new Scanner(System.in);
+        price                          = keyboard.nextInt();
+        change                         = 100 - price;
+        quartersBack                   = change / 25;
+        change                         = change - (quartersBack * 25);
+        dimesBack                      = change / 10;
+        change                         = change - (dimesBack * 10);
+        nickelBack                     = change / 5;
+        
+        
+        System.out.println();
+        System.out.println("You bought an item for " + price + " cents and gave me a dollar, so your change is:");
+        System.out.println("Quarters:    " + quartersBack);
+        System.out.println("Dimes:       " + dimesBack);
+        System.out.println("Nickels:     " + nickelBack);
+        System.out.println();
+        System.out.println("Enjoy your fizzy drink! :)");
+
+         
+        
+           
+           
+           }
+}
