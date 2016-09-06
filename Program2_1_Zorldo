@@ -1,0 +1,31 @@
+/* File Name:          Program2_1_Gray
+
+   Programmer:         Michael Gray
+
+   Date Last Modified: Aug. 31, 2016 */
+
+// Program2_1_Gray.java
+// This program will ask the user for a temperature in celsius
+// thatt it will convert to Fahrenhei
+
+import java.util.*;
+
+public class Program2_1_Gray
+{
+    public static void main(String[] args)
+    {
+        System.out.println("Hi!");
+        System.out.println("Let's convert celsius to Freedom Units!");
+        System.out.println("Please enter the temperature in Celsius:");
+
+        double celsius, fahrenheit;
+
+        Scanner keyboard = new Scanner(System.in);
+        celsius = keyboard.nextDouble( );
+        fahrenheit = (9.0 / 5) * celsius + 32;
+
+        System.out.println(celsius + " Celsius is " + fahrenheit + " fahrenheit.");
+  
+        
+    }
+}
