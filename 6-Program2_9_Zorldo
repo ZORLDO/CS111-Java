@@ -30,7 +30,7 @@
    
    DATA DICTIONARY
    ---------------
-   NAME	TYPE		VALUE RANGE  	DESCRIPTION
+   NAME	TYPE	   VALUE RANGE DESCRIPTION
    =================== =========== ====================
    sentence            string      the sentence provided by the user
    firstSpace          int         the index value of where the first space occurs
