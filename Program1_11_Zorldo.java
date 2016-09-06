@@ -1,13 +1,13 @@
-/* File Name:          Program1_11_Gray.java
+/* File Name:          Program1_11_Zorldo.java
 
-   Programmer:         Michael Gray
+   Programmer:         Zorldo
 
    Date Last Modified: Aug. 30, 2016 */
 
-// Program1_11_Gray.java
+// Program1_11_Zorldo.java
 // This program will display projected future census data. 
 
-public class Program1_11_Gray
+public class Program1_11_Zorldo
 {
     public static void main(String[] args)
     {
