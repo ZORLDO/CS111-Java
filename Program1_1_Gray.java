@@ -1,6 +1,6 @@
 /* File Name:          MyFirstProgram.java
 
-   Programmer:         Michael Gray
+   Programmer:         Zorldo
 
    Date Last Modified: Aug. 26, 2016 */
 
