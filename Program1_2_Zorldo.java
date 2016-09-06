@@ -1,10 +1,10 @@
-/* File Name:          Program1_2_Gray.java
+/* File Name:          Program1_2_Zorldo.java
 
-   Programmer:         Michael Gray
+   Programmer:         Zorldo
 
    Date Last Modified: Aug. 29, 2016 */
 
-public class Program1_2_Gray
+public class Program1_2_Zorldo
 {
     public static void main(String[] args)
     {
