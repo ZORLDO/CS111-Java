@@ -1,0 +1,72 @@
+/* Chapter No. 2 - Exercise No. 23
+   File Name:          Program2_23_Zorldo.java
+   Programmer:         Zorldo
+   Date Last Modified: September 5, 2016
+
+   Problem Statement: Write a program that prompts the user to enter the distance to drive, the fuel efficiency of the car in mpg, and the price per gallon. Display the cost of the trip.
+   
+   
+   
+   Overall Plan:
+   1. Write code to prompt the user for distance, mpg, and cost per gallon.
+   2. Take the value of distance and divide it by miles per gallon, place answer in a new variable called gallonsNeeded
+   3. Multiply the value of this new variable by the price per gallon of gas, this will be the total cost
+   4. Round the total cost to two decimal places.
+   
+   
+   
+   
+   main class - Program2_23_Zorldo
+   
+   DATA DICTIONARY
+   ---------------
+   NAME	TYPE		   VALUE RANGE	DESCRIPTION
+   =================== =========== ====================
+   distance              double    The distance the user will be driving
+   mpg                   double    How many miles the user's car can drive per gallon of gasoline
+   price                 double    The price of a gallon of gas       
+   gallonsNeeded         double    The number of gallons required to travel the distance provided by the user
+   totalCost             double    The total cost of the trip based on the information provided
+   roundPrice            double    totalCost rounded to two decimal places 
+
+*/
+
+import java.util.*;
+
+public class Program2_23_Zorldo
+{
+    public static void main(String[] args)
+    {
+        System.out.println("Let's calculate the fuel cost of your trip");
+        System.out.println();
+        
+        
+        double distance, mpg, price, gallonsNeeded, totalCost;
+
+// user input section //         
+        
+        Scanner keyboard               = new Scanner(System.in);
+            
+        System.out.println("Enter the driving distance: ");
+        distance                       = keyboard.nextDouble();
+
+        System.out.println("Enter miles per gallon: ");
+        mpg                            = keyboard.nextDouble();
+        
+        System.out.println("Enter price per gallon: ");
+        price                          = keyboard.nextDouble();
+        
+// math and results section //
+
+        gallonsNeeded                  = distance / mpg;
+        totalCost                      = gallonsNeeded * price;
+        roundPrice                     = Math.round(totalCost * 100.0) / 100.0;
+        
+//output // 
+        System.out.println();
+        System.out.println("The total fuel cost of your trip is: $" + roundPrice);
+        
+           
+           
+           }
+}
