@@ -1,0 +1,81 @@
+/* Chapter No. 2 - Exercise No. 9
+   File Name:          Program2_9_Zorldo.java
+   Programmer:         Zorldo
+   Date Last Modified: September 5, 2016
+
+   Problem Statement: Write a program that...
+
+   - Reads a sentence from the user and effectively moves the first word of the string to the end.
+
+   - Do not worry about punctuation marks, meaning if they are included by the user, just ignore them.
+
+   - be sure to make the first character of the new last word lower case, and the first character of the new first word upper case.
+   
+   
+   
+   Overall Plan:
+   1. Write code to prompt the user for a sentence.
+   2. find where the first space in the sentence is
+   3. Store whatever comes before this space in a variable.
+      Assuming the sentence is formatted correctly by its author, whatever comes before the first space is our first word.      
+   4. Separate the first letter of the second word and store that in a variable as well
+   5. Use the toUpperCase method to capitalize the letter, store the output in a variable called "capitalized"
+   6. Create a string that starts the sentence after the first letter of the second word.
+   7. Use the toLowerCase method on the first word from earlier. Store this in a new string called lastWord (EDIT: add a space before that)
+   8. Output the new sentence by printing.... firstLetter + newStart + lastWord
+   
+   
+   
+   main class - Program2_9_Zorldo
+   
+   DATA DICTIONARY
+   ---------------
+   NAME	TYPE		   VALUE RANGE	DESCRIPTION
+   =================== =========== ====================
+   sentence            string      the sentence provided by the user
+   firstSpace          int         the index value of where the first space occurs
+   FirstWord           string      the first word in the sentence, everything before the first space       
+   FirstLetter         string      the first letter of the second word in the sentence
+   capitalized         string      the capitalized form of firstLetter
+   newStart            string      the sentence beginning at the second letter of the second word
+   lastWord            string      the original first word in the sentence, to be put in lowercase and placed at the end of our output 
+
+*/
+
+import java.util.*;
+
+public class Program2_9_Zorldo
+{
+    public static void main(String[] args)
+    {
+        
+        String sentence, firstWord, firstLetter, capitalized, newStart, lastWord; 
+        int firstSpace;        
+        
+        Scanner keyboard               = new Scanner(System.in);
+           
+        
+        System.out.println("Enter your sentence here:");
+        sentence                       = keyboard.nextLine();
+            
+        firstSpace                     = sentence.indexOf(" ");
+        firstWord                      = sentence.substring(0, firstSpace);
+        firstLetter                    = sentence.substring(firstSpace + 1, firstSpace + 2);
+        capitalized                    = firstLetter.toUpperCase();
+        newStart                       = sentence.substring(firstSpace + 2);
+        lastWord                       = " " + firstWord.toLowerCase();
+        
+        
+        
+        System.out.println(capitalized + newStart + lastWord);
+        
+           
+                    
+        
+        
+
+        
+           
+           
+           }
+}
