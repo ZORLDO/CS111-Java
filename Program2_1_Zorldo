@@ -1,16 +1,16 @@
-/* File Name:          Program2_1_Gray
+/* File Name:          Program2_1_Zorldo
 
-   Programmer:         Michael Gray
+   Programmer:         Zorldo
 
    Date Last Modified: Aug. 31, 2016 */
 
-// Program2_1_Gray.java
+// Program2_1_Zorldo.java
 // This program will ask the user for a temperature in celsius
 // thatt it will convert to Fahrenhei
 
 import java.util.*;
 
-public class Program2_1_Gray
+public class Program2_1_Zorldo
 {
     public static void main(String[] args)
     {
