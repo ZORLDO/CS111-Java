@@ -1,0 +1,57 @@
+import java.util.*;
+
+public class Duelist {
+
+    private String name;
+    private double accuracy;
+    private boolean alive;
+    
+    //creating our duelist
+ 
+    
+    //setter
+    public void setName(String newName)
+    {
+        name      = newName;
+    }
+    public void setAccuracy(double newAccuracy)
+    {
+        accuracy = newAccuracy;
+    }
+    public void setAlive(boolean isAlive)
+    {
+        alive    = isAlive;
+    }
+    //getters
+    
+    public String getName()
+    {
+        return name;
+    }
+    public double getAccuracy () 
+    {
+        return accuracy;
+    }
+    public boolean getAlive()
+    {
+        return alive;
+    }
+    
+    public Duelist(String newName, double newAccuracy, boolean isAlive)
+    {    
+        name     = newName;
+        accuracy = newAccuracy;
+        alive    = isAlive;
+    }
+    
+    public void shootAt(Duelist target)
+    {
+        double randomNo = Math.random();
+        if (randomNo <= this.accuracy)
+        {
+            target.setAlive(false);
+        }
+    }               
+
+
+}     
